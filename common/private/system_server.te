@@ -7,5 +7,15 @@ hal_client_domain(system_server, hal_lineage_fastcharge)
 hal_client_domain(system_server, hal_lineage_fod)
 hal_client_domain(system_server, hal_lineage_livedisplay)
 hal_client_domain(system_server, hal_lineage_touch)
+<<<<<<< HEAD
 hal_client_domain(system_server, hal_lineage_trust)
 hal_client_domain(system_server, hal_lineage_powershare)
+=======
+hal_client_domain(system_server, hal_lineage_powershare)
+
+# Pocket lock
+allow system_server pocket_service:service_manager { add find };
+allow system_server pocket_judge_sysfs:dir search;
+allow system_server pocket_judge_sysfs:file rw_file_perms;
+allow system_server pocket_service:service_manager { add find };
+>>>>>>> 642b9d6... sepolicy: add hal_lineage_powershare
